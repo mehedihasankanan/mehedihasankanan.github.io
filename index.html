@@ -2,283 +2,383 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mehedi Hasan Kanan | Engineering Knowledge Hub</title>
-
-    <meta name="description" content="Engineering learning journal, technical articles, resources and professional portfolio of Mehedi Hasan Kanan.">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mehedi Hasan Kanan — Electrical Engineer, engineering learning journal, technical articles and resources.">
+  <meta name="theme-color" content="#080f1d">
+  <title>Mehedi Hasan Kanan | Engineering Knowledge Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
 
-<header>
-    <div class="logo">
-        <span>MK</span>
-        <div>
-            MEHEDI HASAN KANAN
-            <small>ENGINEERING KNOWLEDGE HUB</small>
-        </div>
-    </div>
+<div class="page-glow glow-one"></div>
+<div class="page-glow glow-two"></div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#learning">Learning</a>
-        <a href="#blog">Blog</a>
-        <a href="#resources">Resources</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+<header class="header">
+  <div class="container nav-wrap">
+    <a href="#home" class="brand">
+      <span class="brand-mark">MK</span>
+      <span class="brand-name">
+        <strong>MEHEDI HASAN KANAN</strong>
+        <small>ENGINEERING KNOWLEDGE HUB</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="#home" data-en="Home" data-bn="হোম">Home</a>
+      <a href="#about" data-en="About" data-bn="পরিচিতি">About</a>
+      <a href="#learning" data-en="Learning" data-bn="শেখার জার্নাল">Learning</a>
+      <a href="#blog" data-en="Blog" data-bn="ব্লগ">Blog</a>
+      <a href="#resources" data-en="Resources" data-bn="রিসোর্স">Resources</a>
+      <a href="#projects" data-en="Projects" data-bn="প্রজেক্ট">Projects</a>
+      <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
     </nav>
+
+    <button class="language-btn" id="languageToggle">বাংলা</button>
+  </div>
 </header>
 
-<!-- HERO SECTION -->
-
-<section class="hero" id="home">
-
-    <div class="hero-content">
-
-        <span class="tag">ENGINEER | LIFELONG LEARNER</span>
+<main>
+  <!-- HERO -->
+  <section class="hero section-space" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          <span data-en="ENGINEER · LIFELONG LEARNER"
+                data-bn="ইঞ্জিনিয়ার · আজীবন শিক্ষার্থী">ENGINEER · LIFELONG LEARNER</span>
+        </div>
 
         <h1>
-            Engineering Knowledge,
-            <span>One Day at a Time.</span>
+          <span data-en="Engineering Knowledge,"
+                data-bn="প্রকৌশল জ্ঞান,">Engineering Knowledge,</span>
+          <span class="gradient-text"
+                data-en="One Day at a Time."
+                data-bn="প্রতিদিন একটু একটু করে।">One Day at a Time.</span>
         </h1>
 
-        <p>
-            Welcome to my personal engineering knowledge hub.
-            Here I document my daily learning, practical experiences,
-            technical concepts, engineering projects and useful resources.
+        <p class="hero-description"
+           data-en="Welcome to my engineering knowledge hub. I document what I learn, explore technical concepts, share practical knowledge and build ideas into projects."
+           data-bn="আমার Engineering Knowledge Hub-এ স্বাগতম। এখানে প্রতিদিনের শেখা বিষয়, প্রযুক্তিগত ধারণা, বাস্তব অভিজ্ঞতা এবং বিভিন্ন Engineering Project সংরক্ষণ ও শেয়ার করি।">
+          Welcome to my engineering knowledge hub. I document what I learn, explore technical concepts, share practical knowledge and build ideas into projects.
         </p>
 
-        <div class="buttons">
-            <a href="#learning" class="btn">Explore Learning</a>
-            <a href="#resources" class="btn outline">Browse Resources</a>
+        <div class="hero-actions">
+          <a href="#learning" class="btn btn-primary"
+             data-en="Explore My Learning ↗"
+             data-bn="শেখার জার্নাল দেখুন ↗">Explore My Learning ↗</a>
+          <a href="#about" class="btn btn-secondary"
+             data-en="About Me"
+             data-bn="আমার পরিচিতি">About Me</a>
         </div>
 
+        <div class="hero-facts">
+          <div><strong>EEE</strong><span data-en="Academic Background" data-bn="শিক্ষাগত পটভূমি">Academic Background</span></div>
+          <div><strong>MEP</strong><span data-en="Engineering Interest" data-bn="প্রকৌশল ক্ষেত্র">Engineering Interest</span></div>
+          <div><strong>∞</strong><span data-en="Always Learning" data-bn="শেখার কোনো শেষ নেই">Always Learning</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="profile-top">
+            <span class="mini-label">ENGINEERING / 001</span>
+            <span class="online-dot"></span>
+          </div>
+          <div class="profile-avatar">MK</div>
+          <h2>Mehedi Hasan Kanan</h2>
+          <p>Electrical Engineer</p>
+          <div class="profile-divider"></div>
+          <div class="profile-tags">
+            <span>Power Systems</span><span>MEP</span>
+            <span>HVAC</span><span>Technology</span>
+          </div>
+          <div class="profile-bottom">
+            <span>LEARN · BUILD · SHARE</span>
+            <span>2026 — ∞</span>
+          </div>
+        </div>
+        <div class="floating-chip chip-top">⚡ Power Systems</div>
+        <div class="floating-chip chip-bottom">✦ Knowledge in Progress</div>
+      </div>
     </div>
+  </section>
 
-    <div class="hero-card">
-        <div class="profile-circle">MK</div>
-        <h2>MEHEDI HASAN KANAN</h2>
-        <p>Electrical & Facility Engineering</p>
+  <!-- ABOUT -->
+  <section class="section-space" id="about">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index">01 / ABOUT</span>
+        <h2 data-en="A Little About Me" data-bn="আমার সম্পর্কে">A Little About Me</h2>
+        <p data-en="An engineer with a passion for understanding how things work."
+           data-bn="প্রযুক্তি ও প্রকৌশলের কার্যপ্রণালী বুঝতে আগ্রহী একজন ইঞ্জিনিয়ার।">
+          An engineer with a passion for understanding how things work.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-main panel">
+          <span class="panel-kicker">WHO I AM</span>
+          <h3 data-en="Learning today. Improving tomorrow."
+              data-bn="আজ শিখছি, আগামীকাল আরও দক্ষ হচ্ছি।">
+            Learning today. Improving tomorrow.
+          </h3>
+          <p data-en="I have an academic background in Electrical and Electronic Engineering. My professional interests cover electrical power systems, facility engineering, healthcare technology and renewable energy."
+             data-bn="আমি Electrical and Electronic Engineering-এ স্নাতক সম্পন্ন করেছি। Electrical Power Systems, Facility Engineering, Healthcare Technology এবং Renewable Energy আমার আগ্রহের ক্ষেত্র।">
+            I have an academic background in Electrical and Electronic Engineering. My professional interests cover electrical power systems, facility engineering, healthcare technology and renewable energy.
+          </p>
+          <p data-en="This platform is my personal space to organize knowledge, record learning progress and share useful educational content."
+             data-bn="এই প্ল্যাটফর্মটি আমার শেখার বিষয়গুলো সাজিয়ে রাখা, অগ্রগতি নথিভুক্ত করা এবং শিক্ষামূলক তথ্য শেয়ার করার ব্যক্তিগত জায়গা।">
+            This platform is my personal space to organize knowledge, record learning progress and share useful educational content.
+          </p>
+        </div>
+
+        <div class="about-side">
+          <div class="mini-panel panel">
+            <span class="panel-kicker">FOCUS AREAS</span>
+            <div class="skill-list">
+              <span>⚡ Electrical & Power</span>
+              <span>❄ HVAC & MEP</span>
+              <span>🔥 Fire Protection</span>
+              <span>🏥 Healthcare Technology</span>
+              <span>☀ Renewable Energy</span>
+              <span>💧 Water Treatment</span>
+            </div>
+          </div>
+          <div class="mini-panel quote-panel">
+            <span>“</span>
+            <p data-en="Knowledge grows when it is learned, applied and shared."
+               data-bn="জ্ঞান তখনই বৃদ্ধি পায়, যখন তা শেখা, প্রয়োগ ও শেয়ার করা হয়।">
+              Knowledge grows when it is learned, applied and shared.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
+  <!-- LEARNING -->
+  <section class="section-space section-muted" id="learning">
+    <div class="container">
+      <div class="section-heading heading-row">
+        <div>
+          <span class="section-index">02 / DAILY JOURNAL</span>
+          <h2 data-en="What I'm Learning" data-bn="আমার শেখার জার্নাল">What I'm Learning</h2>
+          <p data-en="Notes and knowledge collected along the way."
+             data-bn="প্রতিদিনের শেখা বিষয় ও প্রযুক্তিগত নোট।">
+            Notes and knowledge collected along the way.
+          </p>
+        </div>
+        <span class="live-label"><span class="status-dot"></span> LEARNING NEVER STOPS</span>
+      </div>
 
-<!-- ABOUT -->
+      <div class="filter-bar">
+        <input type="search" id="learningSearch"
+               placeholder="Search learning topics..."
+               aria-label="Search learning topics">
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          <option value="electrical">Electrical</option>
+          <option value="hvac">HVAC & MEP</option>
+          <option value="fire">Fire & Safety</option>
+          <option value="healthcare">Healthcare</option>
+          <option value="water">Water Treatment</option>
+          <option value="energy">Renewable Energy</option>
+        </select>
+      </div>
 
-<section class="section" id="about">
+      <div class="learning-grid" id="learningGrid">
+        <article class="learning-card panel" data-category="electrical">
+          <div class="card-meta"><span> ELECTRICAL </span><time>Sample Entry</time></div>
+          <div class="card-symbol">ϟ</div>
+          <h3>Electrical Substation Fundamentals</h3>
+          <p>Understanding HT/LT systems, transformers, switchgear and electrical distribution.</p>
+          <span class="read-label">LEARNING NOTE ↗</span>
+        </article>
 
-    <div class="section-title">
-        <span>01 / ABOUT ME</span>
-        <h2>About Me</h2>
+        <article class="learning-card panel" data-category="hvac">
+          <div class="card-meta"><span> HVAC & MEP </span><time>Sample Entry</time></div>
+          <div class="card-symbol">❄</div>
+          <h3>Introduction to Chiller Systems</h3>
+          <p>Basic refrigeration cycle, chilled water circulation and major chiller components.</p>
+          <span class="read-label">LEARNING NOTE ↗</span>
+        </article>
+
+        <article class="learning-card panel" data-category="healthcare">
+          <div class="card-meta"><span> HEALTHCARE </span><time>Sample Entry</time></div>
+          <div class="card-symbol">⌬</div>
+          <h3>Medical Imaging Technology</h3>
+          <p>Learning the fundamental concepts behind medical imaging systems.</p>
+          <span class="read-label">LEARNING NOTE ↗</span>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No matching learning entries found.</p>
+      <p class="section-note" data-en="These are sample entries. Add your own learning notes in script.js."
+         data-bn="এগুলো নমুনা পোস্ট। script.js ফাইলে আপনার নিজের শেখার নোট যোগ করুন।">
+        These are sample entries. Add your own learning notes in script.js.
+      </p>
     </div>
+  </section>
 
-    <p class="description">
-        I am an Engineer with an academic background in
-        Electrical and Electronic Engineering.
+  <!-- BLOG -->
+  <section class="section-space" id="blog">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index">03 / KNOWLEDGE SHARING</span>
+        <h2 data-en="Engineering Blog" data-bn="ইঞ্জিনিয়ারিং ব্লগ">Engineering Blog</h2>
+        <p data-en="Technical explanations, guides and ideas worth sharing."
+           data-bn="প্রযুক্তিগত ব্যাখ্যা, গাইড এবং শেয়ার করার মতো ধারণা।">
+          Technical explanations, guides and ideas worth sharing.
+        </p>
+      </div>
 
-        My interests include electrical power systems,
-        generators, substations, HVAC, MEP, fire protection,
-        healthcare technology, renewable energy and engineering
-        automation.
-
-        This website is my personal learning journal and
-        professional knowledge-sharing platform.
-    </p>
-
-</section>
-
-<!-- DAILY LEARNING -->
-
-<section class="section alternate" id="learning">
-
-    <div class="section-title">
-        <span>02 / DAILY LEARNING</span>
-        <h2>My Learning Journal</h2>
+      <div class="blog-grid">
+        <article class="blog-card panel">
+          <div class="blog-art art-blue"><span>⚡</span><small>ELECTRICAL ENGINEERING</small></div>
+          <div class="blog-body">
+            <span class="blog-category">POWER SYSTEMS</span>
+            <h3>Understanding Electrical Protection</h3>
+            <p>Explore the purpose of electrical protection and the role of protective devices.</p>
+            <a href="#learning">Explore topic ↗</a>
+          </div>
+        </article>
+        <article class="blog-card panel">
+          <div class="blog-art art-purple"><span>❄</span><small>FACILITY ENGINEERING</small></div>
+          <div class="blog-body">
+            <span class="blog-category">HVAC</span>
+            <h3>How Does a Chiller Work?</h3>
+            <p>A beginner-friendly overview of chilled water systems and refrigeration.</p>
+            <a href="#learning">Explore topic ↗</a>
+          </div>
+        </article>
+        <article class="blog-card panel">
+          <div class="blog-art art-green"><span>☀</span><small>RENEWABLE ENERGY</small></div>
+          <div class="blog-body">
+            <span class="blog-category">ENERGY</span>
+            <h3>Solar PV System Basics</h3>
+            <p>Learn about solar panels, inverters and the basic system architecture.</p>
+            <a href="#projects">Explore topic ↗</a>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <p class="description">
-        Every day is an opportunity to learn something new.
-        I document technical knowledge, practical observations
-        and important engineering concepts here.
-    </p>
+  <!-- RESOURCES -->
+  <section class="section-space section-muted" id="resources">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index">04 / RESOURCE LIBRARY</span>
+        <h2 data-en="Knowledge Downloads" data-bn="ডিজিটাল রিসোর্স লাইব্রেরি">Knowledge Downloads</h2>
+        <p data-en="Useful documents, spreadsheets and presentations."
+           data-bn="প্রয়োজনীয় ডকুমেন্ট, স্প্রেডশিট ও প্রেজেন্টেশন।">
+          Useful documents, spreadsheets and presentations.
+        </p>
+      </div>
 
-    <div class="grid">
-
-        <div class="card">
-            <h3>Electrical & Power Systems</h3>
-            <p>Substations, transformers, protection and distribution.</p>
-        </div>
-
-        <div class="card">
-            <h3>Generator & UPS</h3>
-            <p>Generator operation, batteries, UPS and backup power.</p>
-        </div>
-
-        <div class="card">
-            <h3>HVAC & MEP</h3>
-            <p>Chillers, AHU, FCU, pumps and facility utilities.</p>
-        </div>
-
-        <div class="card">
-            <h3>Fire & Safety</h3>
-            <p>Fire detection, alarm, suppression and fire pumps.</p>
-        </div>
-
-        <div class="card">
-            <h3>Healthcare Technology</h3>
-            <p>Medical equipment fundamentals and technical learning.</p>
-        </div>
-
-        <div class="card">
-            <h3>Water Treatment</h3>
-            <p>WTP, RO, softener, resin and water quality.</p>
-        </div>
-
+      <div class="resource-grid">
+        <a class="resource-card panel" href="resources/pdf/" >
+          <span class="file-type pdf">PDF</span>
+          <span><strong>PDF Documents</strong><small>Notes, manuals & guides</small></span>
+          <b>↗</b>
+        </a>
+        <a class="resource-card panel" href="resources/excel/">
+          <span class="file-type xls">XLS</span>
+          <span><strong>Excel Sheets</strong><small>Calculations & checklists</small></span>
+          <b>↗</b>
+        </a>
+        <a class="resource-card panel" href="resources/ppt/">
+          <span class="file-type ppt">PPT</span>
+          <span><strong>Presentations</strong><small>Technical slides & learning</small></span>
+          <b>↗</b>
+        </a>
+        <a class="resource-card panel" href="resources/other/">
+          <span class="file-type other">DOC</span>
+          <span><strong>Other Documents</strong><small>Word files & diagrams</small></span>
+          <b>↗</b>
+        </a>
+      </div>
+      <p class="section-note">Upload your files into the matching folders and link to the exact file path.</p>
     </div>
+  </section>
 
-</section>
-
-<!-- BLOG -->
-
-<section class="section" id="blog">
-
-    <div class="section-title">
-        <span>03 / ENGINEERING BLOG</span>
-        <h2>Technical Articles</h2>
+  <!-- PROJECTS -->
+  <section class="section-space" id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index">05 / MY WORK</span>
+        <h2 data-en="Projects & Exploration" data-bn="প্রজেক্ট ও কাজ">Projects & Exploration</h2>
+        <p data-en="Ideas, simulations and engineering solutions."
+           data-bn="প্রকৌশলভিত্তিক ধারণা, সিমুলেশন ও সমাধান।">
+          Ideas, simulations and engineering solutions.
+        </p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card panel">
+          <span class="project-number">PROJECT / 01</span>
+          <div class="project-icon">☀</div>
+          <h3>Solar PV Design</h3>
+          <p>Solar energy system design, estimation and simulation using PVsyst.</p>
+          <div class="project-tags"><span>PVsyst</span><span>Solar</span></div>
+        </article>
+        <article class="project-card panel">
+          <span class="project-number">PROJECT / 02</span>
+          <div class="project-icon">⌁</div>
+          <h3>Renewable Energy Analysis</h3>
+          <p>Hybrid energy system modelling and analysis using HOMER Energy.</p>
+          <div class="project-tags"><span>HOMER</span><span>Energy</span></div>
+        </article>
+        <article class="project-card panel">
+          <span class="project-number">PROJECT / 03</span>
+          <div class="project-icon">▦</div>
+          <h3>Engineering Management System</h3>
+          <p>A concept for digital work orders, maintenance logs and engineering records.</p>
+          <div class="project-tags"><span>Web</span><span>Automation</span></div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <p class="description">
-        Detailed articles, explanations, engineering notes
-        and practical knowledge.
-    </p>
-
-    <div class="grid">
-
-        <div class="card">
-            <span class="category">ELECTRICAL</span>
-            <h3>Understanding Electrical Substations</h3>
-            <p>Learn about HT, LT, transformers and protection systems.</p>
+  <!-- CONTACT -->
+  <section class="section-space contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box panel">
+        <span class="section-index">06 / GET IN TOUCH</span>
+        <h2 data-en="Let's Connect & Share Knowledge."
+            data-bn="চলুন, যোগাযোগ করি ও জ্ঞান শেয়ার করি।">
+          Let's Connect & Share Knowledge.
+        </h2>
+        <p data-en="Open to learning, meaningful discussions and professional connections."
+           data-bn="শেখা, প্রযুক্তিগত আলোচনা এবং পেশাগত যোগাযোগের জন্য স্বাগতম।">
+          Open to learning, meaningful discussions and professional connections.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn-secondary" href="https://github.com/mehedihasankanan" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-secondary" href="mailto:your-email@example.com">Email ↗</a>
         </div>
-
-        <div class="card">
-            <span class="category">HVAC</span>
-            <h3>Introduction to Chiller Systems</h3>
-            <p>Understand the basic working principles of chillers.</p>
-        </div>
-
-        <div class="card">
-            <span class="category">HEALTHCARE</span>
-            <h3>Understanding PET-CT Technology</h3>
-            <p>Learn the basic concepts of PET and CT imaging.</p>
-        </div>
-
+      </div>
     </div>
+  </section>
+</main>
 
-</section>
-
-<!-- RESOURCES -->
-
-<section class="section alternate" id="resources">
-
-    <div class="section-title">
-        <span>04 / RESOURCE LIBRARY</span>
-        <h2>Engineering Resources</h2>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>MEHEDI HASAN KANAN</strong>
+      <p>Engineering Knowledge Hub</p>
     </div>
-
-    <p class="description">
-        A collection of useful learning materials,
-        documents, spreadsheets, presentations and diagrams.
-    </p>
-
-    <div class="grid">
-
-        <div class="card resource">
-            <div class="file-icon">PDF</div>
-            <h3>PDF Documents</h3>
-            <p>Technical notes, guides and learning documents.</p>
-            <a href="resources/" class="resource-link">Browse PDF →</a>
-        </div>
-
-        <div class="card resource">
-            <div class="file-icon excel">XLS</div>
-            <h3>Excel Files</h3>
-            <p>Calculations, checklists and engineering sheets.</p>
-            <a href="resources/" class="resource-link">Browse Excel →</a>
-        </div>
-
-        <div class="card resource">
-            <div class="file-icon ppt">PPT</div>
-            <h3>PowerPoint</h3>
-            <p>Technical presentations and educational slides.</p>
-            <a href="resources/" class="resource-link">Browse PPT →</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section class="section" id="projects">
-
-    <div class="section-title">
-        <span>05 / PROJECTS</span>
-        <h2>Engineering Projects</h2>
-    </div>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Solar PV Design</h3>
-            <p>Solar energy system design and simulation using PVsyst.</p>
-        </div>
-
-        <div class="card">
-            <h3>Renewable Energy Analysis</h3>
-            <p>Hybrid energy system analysis using HOMER Energy.</p>
-        </div>
-
-        <div class="card">
-            <h3>Engineering Management System</h3>
-            <p>Digital engineering work and maintenance management concepts.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="section alternate" id="contact">
-
-    <div class="section-title">
-        <span>06 / CONTACT</span>
-        <h2>Let's Connect</h2>
-    </div>
-
-    <p class="description">
-        Interested in engineering, technology, learning
-        and professional collaboration?
-        Feel free to connect with me.
-    </p>
-
-    <div class="contact-links">
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/mehedihasankanan" target="_blank">GitHub</a>
-        <a href="mailto:your-email@example.com">Email</a>
-    </div>
-
-</section>
-
-<footer>
-    <h3>MEHEDI HASAN KANAN</h3>
-    <p>Engineering Knowledge Hub</p>
-    <p>© 2026 All Rights Reserved.</p>
+    <p>© <span id="year"></span> Mehedi Hasan Kanan. Built for learning & sharing.</p>
+    <a href="#home">Back to top ↑</a>
+  </div>
 </footer>
 
 </body>
