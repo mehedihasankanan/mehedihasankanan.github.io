@@ -228,7 +228,7 @@ button {
 }
 
 .gradient-text {
-  display: block;
+  display: inline;
   background: linear-gradient(90deg, var(--blue), var(--cyan));
   -webkit-background-clip: text;
   background-clip: text;
